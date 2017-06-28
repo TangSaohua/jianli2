@@ -1,0 +1,88 @@
+.txt-pic1{
+    animation: top 1s linear 1;
+}
+@keyframes top {
+    0%{transform: translateY(-300px)}
+    100%{transform: translateY(0)}
+}
+
+.txt-pic2{
+    animation: txt 0.8s linear 1;
+}
+@keyframes txt {
+    0%{transform: translateX(-500px)}
+    100%{transform: translateX(0)}
+}
+
+.txt-pic3{
+    animation: txt1 0.8s linear 1;
+}
+@keyframes txt1 {
+    0%{transform: translateY(500px)}
+    100%{transform: translateY(0)}
+}
+
+.txt-pic4{
+    animation: txt2 0.8s linear 1;
+}
+@keyframes txt2 {
+    0%{transform: translateX(500px)}
+    100%{transform: translateX(0)}
+}
+
+.topanimate{
+    animation: shang 1.5s linear infinite;
+}
+@keyframes shang {
+    0%{transform: translateY(20px)}
+    50%{opacity: 1}
+    100%{transform: translateY(0)}
+}
+
+.pic-1{
+     animation: pic1 1s linear;
+ }
+@keyframes pic1 {
+    0%{transform: translateY(-200px);opacity: 0}
+    100%{transform: translateY(0);opacity: 1}
+}
+
+.pic-2{
+    animation: pic2 1.5s linear;
+}
+@keyframes pic2 {
+    0%{transform: translateY(-50px);opacity: 0}
+    25%{transform: translateY(0);opacity: 1}
+    50%{transform: translateY(-50px);opacity: 1}
+    75%{transform: translateY(50px);opacity: 1}
+    100%{transform: translateY(0);opacity: 1}
+}
+
+.pic-4{
+    animation: pic4 1s linear;
+}
+@keyframes pic4 {
+    0%{transform: scale(0);opacity: 0}
+    100%{transform: scale(1.2);opacity: 1}
+}
+
+.pic5{animation: zzz 1S linear 1 0.2S}
+@keyframes zzz {
+    0%{transform: rotateX(-90deg)}
+    100%{transform: rotateX(0deg)}
+}
+.pic6{animation: zzz 1S linear 1 0.2S}
+@keyframes zzz {
+    0%{transform: rotateX(90deg)}
+    100%{transform: rotateX(0deg)}
+}
+.rotatemusic{
+    animation: music 3s linear infinite;
+}
+@keyframes music {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+
+
+

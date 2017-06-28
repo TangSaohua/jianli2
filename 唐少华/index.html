@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <title></title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <script src="js/fontsize.js"></script>
+</head>
+<body>
+<span class="music rotatemusic">
+
+    </span>
+<audio src="img/m.mp3" id="audio"></audio>
+
+<div class="page page1">
+    <div class="pic1 txt-pic1"><p>个人简介</p></div>
+    <div class="pic2 txt-pic2"><p>唐少华</p>
+        <span>2017.6.24</span>
+    </div>
+</div>
+
+<div class="pic3 topanimate"><img src="img/icon_up.png" alt=""/></div>
+
+<div class="page page2 pageDown">
+    <div class="pic1 pic-1 hide"><p>姓名：唐少华</p></div>
+    <div class="pic1 pic-1 hide"><p>性别：男</p></div>
+    <div class="pic1 pic-1 hide"><p>年龄：19</p></div>
+    <div class="pic2 pic-2 hide"><img src="img/zj.jpg" alt=""/></div>
+    <div class="pic4 pic-4 hide"><p>爱好：打游戏</p>
+        <p>职业：web前端学员</p>
+    </div>
+</div>
+
+<div class="page page3 pageDown">
+    <div class="pic1 pic-1 hide"><p>我们的班级</p></div>
+    <div class="pic2 pic-2 hide"><img src="img/bj.jpg" alt=""/></div>
+    <div class="pic4 pic-4 hide"><img src="img/bj2.jpg" alt=""/></div>
+</div>
+
+<div class="page page4 pageDown">
+    <div class="pic3 txt-pic4 hide"><p>不忘初心，方能始终</p></div>
+    <div class="pic4 txt-pic3 hide"><p>----唐少华</p></div>
+</div>
+
+<div class="page page5 pageDown">
+    <div class="pic1 pic5 hide"><img src="img/rw.png" alt=""/></div>
+    <div class="pic2 pic6 hide"><p>谢谢</p></div>
+</div>
+
+</body>
+</html>
+
+<script src="js/zepto.min.js"></script>
+<script src="js/touch.min.js"></script>
+
+<script>
+
+    var i=0; //当前页
+    //获取总的页数，适应多个页
+    var pageCount=$(".page").length-1;
+
+    $("body").swipeUp(
+            function () {
+
+                if(i<pageCount){
+                    $(".page").eq(i).addClass("pageUp");
+                    $(".page").eq(i).children().addClass("hide");
+                    i++;  //i=i+1;
+                    $(".page").eq(i).removeClass("pageDown");
+                    $(".page").eq(i).children().removeClass("hide");
+                }
+
+            }
+    );
+    $("body").swipeDown(
+            function () {
+
+                if(i>0){
+                    $(".page").eq(i).addClass("pageDown");
+                    $(".page").eq(i).children().addClass("hide");
+                    i--;  //i=i-1;
+                    $(".page").eq(i).removeClass("pageUp");
+                    $(".page").eq(i).children().removeClass("hide");
+                }
+
+            }
+    );
+    $(".music").tap(
+            function(){
+                $(this).toggleClass("rotatemusic");"pageUp"
+//                $("#audio").get(0).pause;
+                if($("#audio").get(0).paused){
+                    $("#audio").get(0).play();
+                }
+                else{
+                    $("#audio").get(0).pause;
+                }
+            }
+    );
+
+</script>
+

@@ -1,0 +1,287 @@
+ *{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    transition: transform 0.5s linear;
+}
+.page1{
+    background: url("../img/002.jpg");
+    z-index: 9999;
+}
+.page1 .pic1{
+    width: 4.96rem;
+    height: 6.05rem;
+    margin: 0 auto;
+}
+.page1 .pic1 p{
+    margin-top: 2rem;
+    margin-left:0.8rem ;
+    font-size: 0.88rem;
+    color: white;
+}
+.page1 .pic2{
+    width: 3.69rem;
+    height: 2.59rem;
+    margin-left: 3rem;
+}
+.page1 .pic2 p{
+    font-size: 0.6rem;
+    color: white;
+
+}
+ .page1 .pic2 span{
+     font-size: 0.6rem;
+     color: white;
+
+
+ }
+
+.pic3{
+    width: 0.5rem;
+    height: 0.28rem;
+    position: absolute;
+    bottom: 1.7rem;
+    left: 50%;
+    margin-left: -0.25rem;
+    z-index: 9999;
+}
+.pic3 img{
+    width: 0.5rem;
+    height: 0.28rem;
+}
+
+.page2{
+    background: url("../img/003.jpg");
+}
+.page2 .pic1{
+    width: 4.5em;
+    margin: 0.3rem auto 0;
+}
+.page2 .pic1 p{
+    font-size: 0.7rem;
+}
+.page2 .pic2{
+    width: 4.81em;
+    height: 4.81rem;
+    margin: 0.6rem auto 0;
+    border: 0.01rem solid white;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.page2 .pic2 img{
+    width: 5em;
+    height: 6rem;
+}
+.page2 .pic3{
+    width: 4.81em;
+    height: 4.87rem;
+    position: absolute;
+    top: 4.5rem;
+    left: 50%;
+    margin-left: -2.405rem;
+    z-index: 0;
+}
+.page2 .pic3 img{
+    width: 4.81em;
+    height: 4.87rem;
+}
+.page2 .pic4{
+    width: 7em;
+    margin:  auto 0;
+}
+.page2 .pic4 p{
+    font-size: 0.7rem;
+    color: white;
+
+}
+ .page2 .pic4 span{
+     font-size: 0.7rem;
+     color: white;
+
+ }
+.page2 .pic5{
+    width: 4.6em;
+    height: 6.6rem;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -2.3rem;
+}
+.page2 .pic5 img{
+    width: 4.6em;
+    height: 6.6rem;
+}
+
+.page3{
+    background: url("../img/001.jpg");
+}
+.page3 .pic1{
+    width: 3.9em;
+
+    margin: 0.3rem auto 0;
+}
+.page3 .pic1 p{
+   font-size: 0.7rem;
+}
+.page3 .pic2{
+    width: 5.01em;
+    height: 4.81rem;
+    margin: 0.6rem auto 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.page3 .pic2 img{
+    width: 5.01em;
+    height: 4.81rem;
+}
+
+.page3 .pic4{
+    width: 4.24em;
+    height: 3.2rem;
+    margin: 1.8rem auto 0;
+}
+.page3 .pic4 img{
+    width: 4.24em;
+    height: 3.2rem;
+}
+.page3 .pic5{
+    width: 4.96em;
+    height: 2.81rem;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    margin-left: -2.3rem;
+}
+.page3 .pic5 img{
+    width: 4.96rem;
+    height: 2.81rem;
+}
+
+.page4{
+    background: url("../img/005.jpg");
+}
+.page4 .pic1{
+    width: 3.24em;
+    height: 2.41rem;
+    margin: 0.3rem auto 0;
+}
+.page4 .pic1 img{
+    width: 3.24rem;
+    height: 2.41rem;
+}
+.page4 .pic2{
+    width: 5.06em;
+    height: 4.81rem;
+    margin: 0.6rem auto 0;
+}
+.page4 .pic2 img{
+    width: 5.06em;
+    height: 4.81rem;
+}
+.page4 .pic3{
+    width: 5rem;
+    height: 4.29rem;
+    position: absolute;
+    top: 4.5rem;
+    left: 50%;
+    margin-left: -1.725rem;
+    z-index: 0;
+}
+.page4 .pic3 p{
+    color: white;
+}
+.page4 .pic4{
+    width: 6em;
+    height: 0.33rem;
+    margin: 8rem 2rem 0;
+}
+.page4 .pic4 p{
+    width: 5em;
+    height: 0.33rem;
+    color: white;
+}
+.page4 .pic5{
+    width: 5.43em;
+    height: 3.74rem;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    margin-left: -2.3rem;
+}
+.page4 .pic5 img{
+    width: 5.43rem;
+    height: 3.74rem;
+}
+
+.page5{
+    background: url("../img/006.jpg");
+}
+.page5 .pic1{
+    width: 5.4rem;
+    height: 5.9rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 50%;
+    margin-left: -2.815rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.page5 .pic1 img{
+    width: 5.4rem;
+    height: 5.9rem;
+}
+.page5 .pic2{
+    width: 5.2rem;
+    height: 0.88rem;
+    position: absolute;
+    top: 9rem;
+    left: 35%;
+}
+.page5 .pic2 p{
+    font-size: 1rem;
+    color: white;
+
+}
+
+.pageUp{
+    transform: translateY(-100%);
+}
+.pageDown{
+    transform: translateY(100%);
+}
+.hide{
+    display: none;
+    !important;
+}
+
+ .music{
+     display: block;
+     width: 0.88rem;
+     height: 0.88rem;
+     background: url("../img/music.png");
+     position: fixed;
+     right: 0.2rem;
+     top: 0.2rem;
+     background-size: 0.88rem 0.88rem;
+     z-index: 99999;
+ }
+
+
